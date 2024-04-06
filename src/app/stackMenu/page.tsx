@@ -1,5 +1,10 @@
+import Checkbox from '@/components/checkbox/Checkbox'
 import React from 'react'
 
 export default function StackMenu() {
-  return <div>Choose Your Stack</div>
+  return (
+    <div>
+      <Checkbox />
+    </div>
+  )
 }
