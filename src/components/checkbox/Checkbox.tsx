@@ -16,41 +16,35 @@ export default function Checkbox() {
   ]
 
   return (
-    <div>
-      <div className="text-white flex justify-center mb-20">
-        <h2>Choose your stack</h2>
-      </div>
-      <div className="flex flex-wrap justify-center">
-        {checkboxes.map((checkbox, index) => (
-          <div
-            key={index}
-            className="h-32 w-48 bg-base-100 max-w-xs rounded overflow-hidden shadow-lg m-4"
-          >
-            <div className="flex items-baseline justify-evenly mt-4 mb-4">
-              <div className="ml-2 mr-2">
-                <Image
-                  src={checkbox.logo}
-                  alt={checkbox.name}
-                  height={80}
-                  width={80}
+    <div className="flex flex-wrap justify-center">
+      {checkboxes.map((checkbox, index) => (
+        <div
+          key={index}
+          className="h-32 w-48 bg-base-100 max-w-xs rounded overflow-hidden shadow-lg m-4"
+        >
+          <div className="flex items-baseline justify-evenly mt-4 mb-4">
+            <div className="ml-2 mr-2">
+              <Image
+                src={checkbox.logo}
+                alt={checkbox.name}
+                height={80}
+                width={80}
+              />
+            </div>
+            <div>
+              <div className="cursor-pointer">
+                <input
+                  type="checkbox"
+                  className="h-9 w-9 border-2 checkbox checkbox-secondary"
                 />
               </div>
-              <div>
-                <div className="cursor-pointer">
-                  <input
-                    type="checkbox"
-                    defaultChecked
-                    className="h-9 w-9 border-2 checkbox checkbox-secondary"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="font-bold text-lg flex items-center justify-center mt-6">
-              {checkbox.name}
             </div>
           </div>
-        ))}
-      </div>
+          <div className="font-bold text-lg flex items-center justify-center mt-6">
+            {checkbox.name}
+          </div>
+        </div>
+      ))}
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <div className="bg-slate-800 min-h-screen flex flex-col ml-32">
+    <div className="ml-32 mt-48">
       <h1 className="text-8xl font-medium text-white mb-6 justify-start">
         Good First Issue
       </h1>
