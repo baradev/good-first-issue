@@ -7,7 +7,7 @@ export default function Links() {
   return (
     <div>
       {links.map((link, index) => (
-        <Link className="text-white" key={index} href={link.path}>
+        <Link key={index} href={link.path}>
           {link.title}
         </Link>
       ))}
