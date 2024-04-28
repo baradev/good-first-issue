@@ -5,6 +5,7 @@ export default function Links() {
   const links = [
     { title: 'Dashboard', path: '/' },
     { title: 'Profile', path: '/userProfile' },
+    { title: 'Settings', path: '/userSettings' },
   ]
 
   return (

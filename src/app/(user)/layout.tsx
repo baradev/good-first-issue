@@ -1,6 +1,9 @@
 import Footer from '@/components/footer/Footer'
 import NavBar from '@/components/navbar/NavBar'
 import '@/app/globals.css'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Next.js',
@@ -14,9 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <NavBar />
-        {children}
+      <body
+        className={`flex flex-col min-h-screen bg-white ${inter.className}`}
+      >
+        <div className="flex-1">
+          <NavBar />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
