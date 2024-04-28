@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Good First Issue (GFI)
 
-## Getting Started
+GFI is an app designed to provide junior developers with practical experience in software development.
 
-First, run the development server:
+Please note that this project is currently under development.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage
+With GFI, users can select their preferred tech stack to gain hands-on experience. In the user dashboard, they can browse through open GitHub issues where they can contribute and learn.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Setup
+GFI is built using the following technologies:
+- Next.js for the frontend application
+- Typescript for development
+- Tailwind CSS for styling
+- GitHub API for fetching open issues
+- Auth0 for user authentication
+- Postgres Database for data storage
+- Node.js for server-side operations
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation - for contributors
+To install GFI locally, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:baradev/good-first-issue.git
+   ```
+2. Navigate to the project directory: `cd good-first-issue`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Visit `http://localhost:3000` in your browser to view the app.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Feel free to contribute to the project and help us create a valuable learning platform for junior developers!
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
