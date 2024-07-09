@@ -32,7 +32,7 @@ export default function Home() {
             {/* row 3 */}
             <tr>
               <th>3</th>
-              <td>Brice Swyre</td>
+              <td>WW Swyre</td>
               <td>Tax Accountant</td>
               <td>Red</td>
             </tr>
